@@ -8,12 +8,6 @@ qui {
 		aka simulate, generate data 
 		from results: reversed process!!
 	}
-	if c(os)=="Windows" { //methods
-	    lobal workdir "`c(pwd)'\"
-	}
-	else {
-	    global workdir "`c(pwd)'/"
-	}
 	capture log close
 	log using ${workdir}simulation.log, replace 
 	set seed 340600
